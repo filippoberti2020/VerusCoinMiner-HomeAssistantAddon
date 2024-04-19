@@ -17,18 +17,17 @@ RUN apt-get update && apt-get install -y \
     xz-utils \
     && rm -rf /var/lib/apt/lists/*
 
-# Clone the ccminer-verus repository
-RUN git clone https://github.com/Oink70/ccminer-verus.git /ccminer-verus && cd /ccminer-verus
-
-# Build the ccminer-verus binary
-RUN mkdir build && cd build && cmake .. && make
-
-# Copy the ccminer-verus binary into the container
-COPY --from=build /ccminer-verus/ccminer-verus /usr/local/bin/ccminer-verus
+# Clone the ccminer-verus repository, build the binary, and copy it
+RUN git clone https://github.com/Oink70/ccminer-verus.git /ccminer-verus \
+    && cd /ccminer-verus \
+    && mkdir build \
+    && cd build \
+    && cmake .. \
+    && make \
+    && cp ccminer-verus /usr/local/bin/ccminer-verus
 
 # Set the working directory
 WORKDIR /config
 
 # Set the entrypoint
 ENTRYPOINT ["/run.sh"]
-
