@@ -11,7 +11,7 @@ url: "https://github.com/filippoberti2020/VerusCoinMiner-HomeAssistantAddon"
 apparmor: true
 backup: hot
 tmpfs: true
-stage: deprecated
+stage: alpha
 
 options:
   wallet_address: "your_wallet_address"
