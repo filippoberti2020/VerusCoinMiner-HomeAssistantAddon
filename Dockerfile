@@ -28,13 +28,6 @@ RUN git clone https://github.com/Oink70/ccminer-verus.git /ccminer-verus \
 
 # Copy the run.sh script
 COPY run.sh /
-RUN chmod a+x /run.sh
-
 # Copy the miner.py script
-COPY miner.py /config/
-
-# Set the working directory
-WORKDIR /config
-
-# Set the entrypoint
-ENTRYPOINT ["/run.sh"]
+COPY miner.py /
+RUN chmod a+x /run.sh
