@@ -1,0 +1,23 @@
+name: "Verus Coin Miner"
+description: "Mine Verus Coin in Home Assistant"
+version: "1.0.0"
+slug: "verus-coin-miner"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+
+apparmor: true
+backup: hot
+tmpfs: true
+stage: deprecated
+
+options:
+  wallet_address: "your_wallet_address"
+  mining_pool: "your_mining_pool"
+
+schema:
+  wallet_address: str
+  mining_pool: str
+

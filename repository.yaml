@@ -1,0 +1,25 @@
+name: "VerusCoinMiner-HomeAssistantAddon"
+description: "A Home Assistant addon to mine Verus Coin"
+version: "1.0.0"
+author: "Your Name"
+author_url: "https://github.com/yourusername"
+license: "MIT"
+
+# The URL to the repository containing the addon
+repository_url: "https://github.com/yourusername/VerusCoinMiner-HomeAssistantAddon"
+
+# The URL to the addon's documentation
+documentation_url: "https://github.com/yourusername/VerusCoinMiner-HomeAssistantAddon/blob/main/README.md"
+
+# The URL to the addon's code of conduct
+code_of_conduct_url: "https://github.com/yourusername/VerusCoinMiner-HomeAssistantAddon/blob/main/CODE_OF_CONDUCT.md"
+
+# The URL to the addon's issue tracker
+issue_tracker_url: "https://github.com/yourusername/VerusCoinMiner-HomeAssistantAddon/issues"
+
+# The URL to the addon's source code
+source_code_url: "https://github.com/yourusername/VerusCoinMiner-HomeAssistantAddon"
+
+# The URL to the addon's contribution guidelines
+contribution_guidelines_url: "https://github.com/yourusername/VerusCoinMiner-HomeAssistantAddon/blob/main/CONTRIBUTING.md"
+
