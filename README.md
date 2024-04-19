@@ -1,5 +1,5 @@
 # VerusCoinMiner
-## A Home Assistant addon to mine Verus coin using ccminer-verus.
+A Home Assistant addon to mine Verus coin using ccminer-verus.
 
 ## Requirements
 - Home Assistant 2022.12 or later
