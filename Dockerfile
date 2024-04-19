@@ -26,6 +26,13 @@ RUN git clone https://github.com/Oink70/ccminer-verus.git /ccminer-verus \
     && make \
     && cp ccminer-verus /usr/local/bin/ccminer-verus
 
+# Copy the run.sh script
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+# Copy the miner.py script
+COPY miner.py /config/
+
 # Set the working directory
 WORKDIR /config
 
