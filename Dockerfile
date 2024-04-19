@@ -1,3 +1,6 @@
+ARG BUILD_FROM
+FROM $BUILD_FROM
+
 FROM python:3.9
 
 # Install necessary dependencies
@@ -30,4 +33,7 @@ RUN git clone https://github.com/Oink70/ccminer-verus.git /ccminer-verus \
 COPY run.sh /
 # Copy the miner.py script
 COPY miner.py /
+
 RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]
