@@ -16,7 +16,8 @@ stage: alpha
 options:
   wallet_address: "your_wallet_address"
   mining_pool: "your_mining_pool"
-
+  usernames: "miner_name"
+  verus_password: ""
 schema:
   wallet_address: str
   mining_pool: str
