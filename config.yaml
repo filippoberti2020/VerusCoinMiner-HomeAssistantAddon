@@ -22,4 +22,5 @@ options:
 schema:
   wallet_address: str
   mining_pool: str
-
+  usernames: str
+  verus_password: str
